@@ -6,13 +6,26 @@
 		<version>7</version>
 	</parent>
 	<groupId>com.github.springtestdbunit</groupId>
-	<artifactId>spring-test-dbunit</artifactId>
+	<artifactId>spring-test-dbunit-ext</artifactId>
 	<version>1.0.2-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>Spring Test DBUnit</name>
 	<description>Integration between the Spring testing framework and DBUnit</description>
 	<url>https://springtestdbunit.github.com/spring-test-dbunit</url>
-	<issueManagement>
+
+	<distributionManagement>
+        <repository>            
+			<id>releases</id>             
+			<name>Nexus Release Repository</name>             
+			<url>http://10.225.27.120:8081/nexus/content/repositories/thirdparty/</url>       
+		</repository>       
+		<snapshotRepository>            
+			<id>snapshots</id>            
+			<name>Nexus Snapshot Repository</name>            
+			<url>http://10.225.27.120:8081/nexus/content/repositories/snapshots/</url>          
+		</snapshotRepository>   
+    </distributionManagement>
+	<!--<issueManagement>
 		<url>https://github.com/springtestdbunit/spring-test-dbunit/issues</url>
 		<system>GitHub Issues</system>
 	</issueManagement>
@@ -27,7 +40,7 @@
 		<url>https://github.com/springtestdbunit/spring-test-dbunit</url>
 		<connection>scm:git:git://github.com/springtestdbunit/spring-test-dbunit.git</connection>
 		<developerConnection>scm:git:git@github.com:springtestdbunit/spring-test-dbunit.git</developerConnection>
-	</scm>
+	</scm>-->
 	<prerequisites>
 		<maven>3.0.3</maven>
 	</prerequisites>
@@ -138,6 +151,16 @@
 				<artifactId>maven-resources-plugin</artifactId>
 				<version>2.5</version>
 			</plugin>
+			<!--<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.5</version>
+					<configuration>
+						<skipTests>false</skipTests>
+						<testFailureIgnore>true</testFailureIgnore>
+						<forkMode>once</forkMode>
+					</configuration>
+			</plugin>-->
 			<plugin>
 				<artifactId>maven-site-plugin</artifactId>
 				<version>3.0</version>
