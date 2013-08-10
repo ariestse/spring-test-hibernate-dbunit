@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.github.springtestdbunit.sample</groupId>
-	<artifactId>spring-test-dbunit-sample</artifactId>
+	<artifactId>spring-test-hibernate-dbunit-sample</artifactId>
 	<version>1.0.1-SNAPSHOT</version>
 	<name>Spring Test DBUnit Sample</name>
 	<properties>
@@ -91,8 +91,8 @@
 		</dependency>
 		<dependency>
 			<groupId>com.github.springtestdbunit</groupId>
-			<artifactId>spring-test-dbunit</artifactId>
-			<version>1.0.1-SNAPSHOT</version>
+			<artifactId>spring-test-hibernate-dbunit</artifactId>
+			<version>1.0.2-SNAPSHOT</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>

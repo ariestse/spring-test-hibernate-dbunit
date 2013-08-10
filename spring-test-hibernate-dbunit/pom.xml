@@ -6,7 +6,7 @@
 		<version>7</version>
 	</parent>
 	<groupId>com.github.springtestdbunit</groupId>
-	<artifactId>spring-test-dbunit-ext</artifactId>
+	<artifactId>spring-test-hibernate-dbunit</artifactId>
 	<version>1.0.2-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>Spring Test DBUnit</name>
